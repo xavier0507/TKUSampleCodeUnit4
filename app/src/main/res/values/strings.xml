@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">TKUUnit4</string>
+	<string-array name="example">
+		<item>Java學習手冊</item>
+		<item>Android學習手冊</item>
+		<item>PHP學習手冊</item>
+		<item>JSP學習手冊</item>
+		<item>C#學習手冊</item>
+	</string-array>
+	<string name="items">選到第%s幾個選項</string>
+</resources>

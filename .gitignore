@@ -1,0 +1,12 @@
+/app/*.pro
+/app/*.iml
+/.idea
+/.gradle
+/build/intermediates/dex-cache/cache.xml
+/local.properties
+/build/intermediates/model_data.bin
+/gradle/wrapper
+/gradlew
+/gradlew.bat
+/*.iml
+/build/intermediates/*.bin
