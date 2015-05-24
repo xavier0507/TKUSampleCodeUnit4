@@ -8,4 +8,9 @@
 		<item>C#學習手冊</item>
 	</string-array>
 	<string name="items">選到第%s幾個選項</string>
+
+	<string name="titleA">品名: 吉士雙牛堡</string>
+	<string name="subtitleA">價錢: 200元</string>
+	<string name="titleB">品名: 吉士堡</string>
+	<string name="subtitleB">價錢: 100元</string>
 </resources>

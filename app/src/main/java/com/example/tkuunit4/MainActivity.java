@@ -10,6 +10,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Xavier on 2015/5/4.
  */
@@ -43,6 +46,24 @@ public class MainActivity extends ActionBarActivity {
 
 		// ListView
 		ListView listView = (ListView) this.findViewById(R.id.listview_book);
+		List<Data> list = new ArrayList<>();
+		for (int i = 0; i < 20; i++) {
+			Data data = new Data();
+
+			if (i % 2 == 0) {
+				data.setTitle(getString(R.string.titleA));
+				data.setSubTitle(getString(R.string.subtitleA));
+				list.add(data);
+			} else {
+				data.setTitle(getString(R.string.titleB));
+				data.setSubTitle(getString(R.string.subtitleB));
+				list.add(data);
+			}
+		}
+
+		CustomAdapter<Data> adapter = new CustomAdapter<>(this, list);
+		listView.setAdapter(adapter);
+
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
